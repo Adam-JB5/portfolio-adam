@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
-
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 @Component({
-  imports: [],
+  imports: [MatCardModule, MatIconModule],
   selector: 'app-projects',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   styleUrl: './projects.scss',
   templateUrl: './projects.html',
 })
