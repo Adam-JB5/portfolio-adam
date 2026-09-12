@@ -1,0 +1,42 @@
+#hero {
+    background-color: #260227;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    clip-path: polygon(100% 0%, 100% 70%, 0% 100%, 0% 0%);
+    padding-bottom: 5rem;
+}
+
+#hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    word-spacing: 8rem;
+}
+
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero-description {
+    flex: 1;
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    max-width: 50rem;
+    word-spacing: 1rem;
+    line-height: 1.5rem;
+}
+
+#hero-cv {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

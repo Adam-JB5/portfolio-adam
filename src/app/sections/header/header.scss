@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+#header {
+    background-color: #1b011c;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: $header-height;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+
+    &.scrolled {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+}
