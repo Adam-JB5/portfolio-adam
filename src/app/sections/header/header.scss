@@ -1,5 +1,12 @@
 @import '../../variables.scss';
 
+@font-face {
+    font-family: 'Doto';
+    src: url('/Doto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #header {
     background-color: #1b011c;
     color: white;
@@ -11,8 +18,16 @@
     top: 0;
     z-index: 1000;
     transition: box-shadow 0.3s ease;
+    font-family: 'Doto';
+
+    button {
+      font-family: 'Doto';
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
 
     &.scrolled {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     }
+
 }

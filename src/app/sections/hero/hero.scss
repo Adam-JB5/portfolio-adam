@@ -1,16 +1,16 @@
 #hero {
-    background-color: #260227;
+    background: linear-gradient(#1b011c, #260227e9);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     clip-path: polygon(100% 0%, 100% 70%, 0% 100%, 0% 0%);
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 #hero-title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     word-spacing: 8rem;
 }

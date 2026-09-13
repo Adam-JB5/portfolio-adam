@@ -5,6 +5,20 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+@font-face {
+    font-family: 'Doto';
+    src: url('/Doto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('/LeagueSpartan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
   height: 100%;
   @include mat.theme(
@@ -17,6 +31,11 @@ html {
       density: 0,
     )
   );
+  @include mat.chips-overrides((
+    label-text-color: rgb(128, 0, 255),
+    outline-color: rgb(65, 5, 83),
+    hover-state-layer-color: rgb(233, 107, 10),
+  ));
 }
 
 body {
@@ -37,3 +56,13 @@ body {
   height: 100%;
 }
 /* You can add global styles to this file, and also import other style files */
+
+h2 {
+  font-family: 'Doto';
+  font-weight: 900;
+}
+
+p {
+  font-family: 'LeagueSpartan';
+  font-size: 1.5rem;
+}

@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     id: 2,
     name: 'Mapa interactivo para Zunibal',
     description: 'En Irontec trabajé en un proyecto para Zunibal (empresa de soluciones marítimas), el cual consistía en el desarrollo de un mapa interactivo que muestra: boyas, trazas, capas entre otra información marítima. Me ocupé de la creación de menús, filtrado de datos de boyas/barcos, muestreo de trazas y límites de mapa, exportaciones, entre otras tareas. El proyecto fue creado en Angular y después traspasado a React, por lo que tuve que adaptar muchos componentes y funcionalidades a un distinto framework.',
-    images: ['/mapa_1.png', '/mapa_2.png'],
+    images: ['/mapa_2.png'],
     skills: ['JavaScript', 'TypeScript', 'Angular', 'React', 'Deck.gl', 'APIs', 'Git', 'Docker', 'Figma'],
   },
   {
@@ -36,6 +36,6 @@ export const projectsData: Project[] = [
     description: 'El proyecto consiste en un juego interactivo de búsqueda del tesoro desarrollado para navegador. El jugador podrá introducir su nombre, elegir el color de su personaje y recorrer un tablero de 10×10 casillas hasta llegar al cofre situado en la última posición. El movimiento se realiza mediante un dado virtual que indica las casillas disponibles en las cuatro direcciones cardinales. El tablero y sus texturas se generan dinámicamente, y las casillas posibles se resaltan para facilitar la interacción. Al finalizar la partida, se muestra el número de tiradas realizadas y se compara la puntuación con los récords almacenados en el navegador. La interfaz también se adapta a diferentes tamaños de pantalla y orientaciones de dispositivo, incluyendo móviles (cabe denotar que se fuerza la vista en horizontal o apaisada en dispositivos móviles).',
     images: ['/juego_1.png', '/juego_2.png', '/juego_3.png'],
     skills: ['JavaScript', 'HTML', 'CSS', 'Git', 'Pixel Art'],
-    link: 'https://adam-jb5.github.io/JuegoInteractivo/'
+    link: 'https://adam-jb5.github.io/Proyecto2DAW-EC/'
   }
 ]

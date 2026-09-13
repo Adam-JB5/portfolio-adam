@@ -1,7 +1,9 @@
 @import './variables.scss';
 
 main {
-    background-color: #1b011c;
-    height: 200vh;
-    
+    background-image: url('../../public/background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
 }
