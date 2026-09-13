@@ -11,3 +11,32 @@
     margin-bottom: 1rem;
     word-spacing: 8rem;
 }
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    .project-card-details {
+        overflow: hidden;
+        margin-top: 0.5rem;
+        animation: expand 0.3s ease-in-out;
+    }
+
+    button {
+        align-self: flex-end;
+    }
+}
+
+@keyframes expand {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
