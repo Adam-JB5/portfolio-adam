@@ -21,8 +21,8 @@
 }
 
 .project-card {
-    width: 80%;
-    max-width: 1000px;
+    width: 60%;
+    max-width: 70%;
     background-color: #1b011c;
     border-radius: 12px;
     padding: 1.5rem;
@@ -43,6 +43,7 @@
     h3 {
         font-size: 2rem;
         margin: 0.5rem;
+        line-height: 1.2;
     }
 
     h4 {
@@ -104,5 +105,12 @@
 
     #projects-title {
         word-spacing: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-images-images {
+        flex: 0 1 calc(100% - 0.375rem); // 1 por fila, restando la mitad del gap
+        max-width: calc(100% - 0.375rem);
     }
 }

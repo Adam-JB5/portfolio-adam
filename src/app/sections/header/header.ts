@@ -1,8 +1,10 @@
 import { Component, HostListener, signal } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
-  imports: [MatButtonModule],
+  imports: [MatButtonModule, MatIconModule, MatMenuModule],
   selector: 'app-header',
   styleUrl: './header.scss',
   templateUrl: './header.html',

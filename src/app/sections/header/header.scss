@@ -27,7 +27,27 @@
     }
 
     &.scrolled {
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 2px 8px #000000cc;
     }
 
+}
+
+#menu-toggle {
+    display: none; // oculto por defecto (desktop)
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        line-height: 1.4rem;
+        margin-left: 1rem;
+    }
+
+    #header-buttons {
+        display: none; // se ocultan los botones normales
+    }
+
+    #menu-toggle {
+        display: inline-flex; // aparece la hamburguesa
+    }
 }

@@ -1,8 +1,21 @@
 <section id="header" [class.scrolled]="scrolled()">
     <h1>ADAM JANAH BENYOUSSEF</h1>
 
-    <button mat-button>ABOUT</button>
-    <button mat-button>PROJECTS</button>
-    <button mat-button>SKILLS</button>
-    <button mat-flat-button>CONTACT</button>
+    <div id="header-buttons">
+        <button mat-button onclick="window.location.href='#hero'">SOBRE MÍ</button>
+        <button mat-button onclick="window.location.href='#projects'">PROYECTOS</button>
+        <button mat-button onclick="window.location.href='#skills'">CONOCIMIENTOS</button>
+        <button mat-flat-button onclick="window.location.href='#contact'">CONTACTO</button>
+    </div>
+
+    <button mat-icon-button id="menu-toggle" [matMenuTriggerFor]="mobileMenu" aria-label="Abrir menú">
+        <mat-icon style="color: #d500a4;">menu</mat-icon>
+    </button>
+
+    <mat-menu #mobileMenu="matMenu">
+        <button mat-menu-item onclick="window.location.href='#hero'">SOBRE MÍ</button>
+        <button mat-menu-item onclick="window.location.href='#projects'">PROYECTOS</button>
+        <button mat-menu-item onclick="window.location.href='#skills'">CONOCIMIENTOS</button>
+        <button mat-menu-item onclick="window.location.href='#contact'">CONTACTO</button>
+    </mat-menu>
 </section>

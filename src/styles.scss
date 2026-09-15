@@ -21,6 +21,11 @@
 
 html {
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: thin; 
+  scrollbar-color: #8000ff #410553; 
   @include mat.theme(
     (
       color: (
@@ -32,9 +37,16 @@ html {
     )
   );
   @include mat.chips-overrides((
-    label-text-color: rgb(128, 0, 255),
-    outline-color: rgb(65, 5, 83),
-    hover-state-layer-color: rgb(233, 107, 10),
+    label-text-color: #8000ff,
+    outline-color: #410553,
+    hover-state-layer-color: #e96b0a,
+  ));
+  @include mat.menu-overrides((
+    container-shape: 12px,
+    divider-color: #410553,
+    container-color: #a900a9,
+    item-label-text-color: #ffffff,
+    item-icon-color: #ffffff,
   ));
 }
 
@@ -54,6 +66,8 @@ body {
   // Reset the user agent margin.
   margin: 0;
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /* You can add global styles to this file, and also import other style files */
 
@@ -64,5 +78,4 @@ h2 {
 
 p {
   font-family: 'LeagueSpartan';
-  font-size: 1.5rem;
 }
