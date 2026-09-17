@@ -5,6 +5,11 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+// import Swiper and modules styles
+@use 'swiper/css';
+@use 'swiper/css/navigation';
+@use 'swiper/css/pagination';
+
 @font-face {
     font-family: 'Doto';
     src: url('/Doto.ttf') format('truetype');
