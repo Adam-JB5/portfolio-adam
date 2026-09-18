@@ -22,6 +22,7 @@ export class Skills implements AfterViewInit {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+        dynamicBullets: true,
       },
       navigation: {
         nextEl: '.swiper-button-next',

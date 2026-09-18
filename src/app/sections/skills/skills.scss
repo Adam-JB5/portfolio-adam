@@ -1,12 +1,13 @@
 #skills {
-    background: linear-gradient(#260227e9 ,#1b011c);
+    background: linear-gradient(#ffffff00 ,#260227e9 ,#1b011c);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
-    padding-TOP: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 
 #skills-title {
@@ -19,6 +20,9 @@
 
 .swiper {
     width: 100%;
+    --swiper-navigation-color: #ff00dd;
+    --swiper-pagination-color: #ff00dd;
+    --swiper-pagination-bullet-inactive-color: #ffffff;
 }
 
 .swiper-slide {
@@ -46,10 +50,5 @@
         width: 80%;
         object-fit: contain;
         aspect-ratio: 1/1;
-    }
-
-    .swiper-button-next {
-        color: white;
-        background-color: #ffffff;
     }
 }
